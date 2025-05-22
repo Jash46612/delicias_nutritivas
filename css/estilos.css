@@ -1,0 +1,303 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+}
+
+/* Navegación */
+.navegacion-principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #eee;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.navegacion-principal ul li {
+    margin: 0 1rem;
+}
+
+.navegacion-principal ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navegacion-principal ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Imagen Principal */
+.imagen-principal {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.imagen-principal img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Introducción */
+.introduccion {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+/* Contenido Principal */
+.contenido-principal, main {
+    flex-grow: 1;
+    max-width: 960px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+/* Secciones de Índice */
+.indice-receta, .indice-mealprep, .indice-post {
+    padding: 1rem;
+    border: 1px solid #eee;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.indice-receta ul, .indice-mealprep ul, .indice-post ul {
+    list-style: none;
+    padding: 0;
+}
+
+.indice-receta ul li, .indice-mealprep ul li, .indice-post ul li {
+    margin-bottom: 0.5rem;
+}
+
+.indice-receta ul li a, .indice-mealprep ul li a, .indice-post ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.indice-receta ul li a:hover, .indice-mealprep ul li a:hover, .indice-post ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.detalles-receta, .detalles-mealprep {
+    padding: 1rem;
+}
+
+.detalles-receta article, .detalles-mealprep article {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.seccion-ingrediente, .seccion-preparacion {
+    margin-bottom: 1.5rem;
+}
+
+.seccion-ingrediente ul, .seccion-preparacion ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+
+.receta-muffins .contenedor-ingredientes-instrucciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.receta-muffins .seccion-ingredientes,
+.receta-muffins .seccion-instrucciones {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+    border: 1px solid #eee;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.lista-recetas {
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 1rem;
+}
+
+.tarjeta-receta {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.tarjeta-receta h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.tarjeta-receta p {
+    margin-bottom: 1rem;
+}
+
+.tarjeta-receta img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.tarjeta-receta a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+.tarjeta-receta a:hover {
+    background-color: #0056b3;
+}
+
+/* Grupos de Alimentos y Consejos de Organización (Mealprep) */
+.preparacion-grupos-alimentos, .tips-organizacion {
+    padding: 1rem;
+    border: 1px solid #eee;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Pie de Página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    margin-top: 10px;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    .navegacion-principal ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacion-principal ul li {
+        margin: 0.5rem 0;
+    }
+
+    /* .lista-recetas ya es column por defecto */
+    .receta-muffins .contenedor-ingredientes-instrucciones {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .introduccion, .contenido-principal, main {
+        padding: 1rem;
+        margin: 0.5rem auto;
+    }
+}
